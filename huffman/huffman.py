@@ -39,7 +39,7 @@ class HuffmanCoding:
         #     frequency[character] += 1
         ent = Entropy(self.path)
         self.symbols_count = ent.symbols_count
-        return ent.symbols
+        return ent.freq
 
     def make_heap(self, frequency):
         for key in frequency:

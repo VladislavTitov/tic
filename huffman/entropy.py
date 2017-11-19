@@ -19,6 +19,8 @@ class Entropy:
             else:
                 self.symbols[symbol] += 1
 
+        self.freq = self.symbols
+
         for key in self.symbols.keys():
             self.symbols[key] /= self.symbols_count
 
