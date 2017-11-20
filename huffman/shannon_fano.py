@@ -39,8 +39,9 @@ class ShannonFanoCoding(HuffmanCoding):
                 break
         root.left = HeapNode(None, 0)
         root.right = HeapNode(None, 0)
-        self.make_tree(root.left, ordered_nodes[:j+1])
-        self.make_tree(root.right, ordered_nodes[j+1:])
+        self.make_tree(root.left, ordered_nodes[:j + 1])
+        self.make_tree(root.right, ordered_nodes[j + 1:])
+
 
 class ShannonFanoPairsCoding(ShannonFanoCoding):
     def __init__(self, path):
